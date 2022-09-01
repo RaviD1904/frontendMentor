@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  .container{
+      /* width: 90%; */
+      /* position: absolute; */
+      height: 550px;
+      /* border: 1px solid red; */
+      margin: 90px 50px 90px 50px;
+      background-color: hsl(212,45%,89%);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  } 
+  .box-shadow{
+    width: 300px;
+    height: 450px;
+    position: relative;
+    top:50px;
+    left: 40%;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .qr-img{
+    width: 100%;
+    height: 65%;
+    border-radius: 8px;
+    background-image: url("images/image-qr-code.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .qr-text-head{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    padding: 10px;
+    text-align: center;
+  }
+  .qr-text-para{
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color:hsl(212, 45%, 89%);
+    padding: 10px;
+    text-align: center;
+  }
+  @media only screen and (min-width: 70px) and (max-width: 375px) {
+    .container{
+      width: fit-content;
+      
+    }
+    .box-shadow{
+      position: unset;
+      margin-left: -40px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box-shadow">
+      <div class="qr-img"></div>
+      <div class="qr-text-head">
+        Improve your front-end skills by building projects
+      </div>
+      <div class="qr-text-para">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ravi Dhamne</a>.
+  </div>
+</body>
+</html>
